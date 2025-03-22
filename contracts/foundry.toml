@@ -1,8 +1,12 @@
 [profile.default]
 src = "src"
 out = "out"
-libs = ["lib"]
-solc = '0.8.20'
-optimizer = true
+libs = ["../lib"]
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[remappings]
+"forge-std/" = "lib/forge-std/src/"
+"openzeppelin/" = "lib/openzeppelin-contracts/contracts/"
+"axelar/" = "lib/axelar-gmp-sdk-solidity/contracts/"
+"chainlink/" = "lib/chainlink/contracts/src/v0.8/"
+"chainlink-ccip/" = "lib/ccip/contracts/src/v0.8/ccip/"
+"hyperlane/" = "lib/hyperlane-monorepo/solidity/contracts/"
